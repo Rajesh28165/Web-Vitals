@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Images Example</title>
+</head>
+<body>
+  <h1>Exploring the Picture Element and Web Vitals</h1>
+
+  <p>Below is an example of using the <code>&lt;picture&gt;</code> element for responsive images:</p>
+
+  <picture>
+    <!-- Image for devices with a minimum width of 1200px -->
+    <source media="(min-width: 750px)" srcset="Nature.jpg">
+    <!-- Image for devices with a minimum width of 800px -->
+    <source media="(min-width: 550px)" srcset="Battle">
+    <!-- Default image for smaller devices -->
+    <img src="car.jpg" alt="Placeholder Image" style="max-width: 100%;">
+  </picture>
+
+  <p>This example delivers different image sizes depending on the screen size, which can improve loading performance on smaller devices.</p>
+</body>
+</html>
